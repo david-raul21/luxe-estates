@@ -108,6 +108,8 @@ h3 { font-size: 1.5rem; }
   box-shadow: 0 1px 0 rgba(26, 26, 26, 0.08);
 }
 
+.nav:not(.scrolled) .btn-primary { border-color: rgba(250, 248, 245, 0.45); }
+
 .nav-brand {
   font-family: var(--font-display);
   font-size: 1.35rem;
@@ -361,6 +363,33 @@ h3 { font-size: 1.5rem; }
 .footer .nav-brand { font-size: 1.1rem; color: var(--fg-light); }
 .footer nav { display: flex; gap: 2rem; }
 .footer nav a:hover { color: var(--accent); }
+
+/* ===== Unterseiten (Rechtliches) ===== */
+.page-hero {
+  background: var(--fg);
+  color: var(--fg-light);
+  padding: clamp(9rem, 18vw, 12rem) 0 clamp(3.5rem, 7vw, 5rem);
+}
+.page-hero h1 { font-size: clamp(2.5rem, 5vw, 3.75rem); }
+
+.legal { max-width: 46rem; }
+.legal h2 {
+  font-size: 1.6rem;
+  margin: 2.75rem 0 0.75rem;
+}
+.legal h2:first-child { margin-top: 0; }
+.legal p, .legal li { color: var(--muted); }
+.legal p + p { margin-top: 0.75rem; }
+.legal ul { padding-left: 1.25rem; margin-top: 0.75rem; }
+.legal a { border-bottom: 1px solid var(--accent); }
+.legal address { font-style: normal; }
+.legal .note {
+  margin-top: 3rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-accent);
+  border-left: 2px solid var(--accent);
+  font-size: 0.85rem;
+}
 
 /* ===== Scroll-Reveal ===== */
 .reveal {

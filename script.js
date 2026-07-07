@@ -31,9 +31,9 @@ const observer = new IntersectionObserver(
 );
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
-// Kontaktformular: ohne Backend, zeigt eine Bestätigung
+// Kontaktformular: ohne Backend, zeigt eine Bestätigung (nur auf der Startseite vorhanden)
 const form = document.getElementById("contact-form");
-form.addEventListener("submit", (event) => {
+form?.addEventListener("submit", (event) => {
   event.preventDefault();
   form.querySelectorAll("label, button").forEach((el) => (el.hidden = true));
   form.querySelector(".form-success").hidden = false;
